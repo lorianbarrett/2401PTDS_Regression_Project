@@ -18,6 +18,11 @@ Your team of environmental consultants and data scientists are tasked by a coali
 
 By the end of this project, you will have a thorough understanding of the impact of agricultural activities on CO2 emissions and climate change. Your findings and recommendations will contribute to the ongoing efforts to promote sustainability within the agri-food sector, providing valuable insights for the stakeholders involved in this initiative.
 
+**Success criteria**
+- Primary: Lower **RMSE** vs a naïve baseline (mean/median) by a meaningful margin.
+- Secondary: R², MAE; clear error behaviour in residual diagnostics.
+- Process: Fully reproducible environment + clear experiment record.
+
 ## 2. Dataset <a class="anchor" id="dataset"></a>
 Emissions from the agri-food sector play a crucial role in climate change, as they represent a significant share of global annual emissions. The dataset highlights the substantial contribution of the various sources of emissions. Therefore, it is essential to understand and address the environmental impact of the agri-food industry to mitigate climate change and promote sustainable practices within this sector.
 
@@ -70,32 +75,47 @@ To carry out all the objectives for this repo, the following necessary dependenc
 
 It's highly recommended to use a virtual environment for your projects, there are many ways to do this; we've outlined one such method below. Make sure to regularly update this section. This way, anyone who clones your repository will know exactly what steps to follow to prepare the necessary environment. The instructions provided here should enable a person to clone your repo and quickly get started.
 
-### Create the new evironment - you only need to do this once
+It is **highly recommended** to use a virtual environment so that all dependencies for this project are isolated and reproducible.  
+You can use either **conda** (Anaconda/Miniconda) or the built-in **venv** module in Python. Both approaches are shown below.
+
+---
+
+### Option A: Using Conda (as suggested in course brief)
 
 ```bash
-# create the conda environment
-conda create --name <env>
-```
+# 1) Create the environment (run once)
+conda create -n ptds_regression python=3.10 -y
 
-### This is how you activate the virtual environment in a terminal and install the project dependencies
+# 2) Activate the environment
+conda activate ptds_regression
 
-```bash
-# activate the virtual environment
-conda activate <env>
-# install the pip package
-conda install pip
-# install the requirements for this project
+# 3) Install dependencies
 pip install -r requirements.txt
-```
+```  
+---
+
+### Option B: Using Python venv (VS Code friendly)
+
+```bash
+# 1) Create the environment (run once, inside repo root)
+python -m venv .venv
+
+# 2) Activate the environment
+# On Windows (PowerShell):
+.venv\Scripts\activate
+# On Mac/Linux:
+source .venv/bin/activate
+
+# 3) Install dependencies
+pip install -r requirements.txt
+```   <-- this line closes the Option B code block
+
 
 ## 5. Team Members<a class="anchor" id="team-members"></a>
 
 | Name                                                                                        |  Email              
 |---------------------------------------------------------------------------------------------|--------------------             
-| [Jana Liebenberg-Fouche](https://github.com/Jana-Liebenberg)                                | jliebenberg-fouche@sandtech.com
-| [Edmund Dotsey](https://github.com/Edotsey)                                                 | edotsey@sandtech.com
-| [Farayi Myambo](https://github.com/Farayi-Explore)                                          | fmyambo@sandtech.com
-
+| [Lorian Barrett](https://github.com/lorianbarrett)                                          | lorian.barrett@ninetyone.com
 
 
 #### Additional Resources to create a README file:
