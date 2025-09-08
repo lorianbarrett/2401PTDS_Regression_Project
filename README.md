@@ -108,14 +108,18 @@ source .venv/bin/activate
 
 # 3) Install dependencies
 pip install -r requirements.txt
-```   <-- this line closes the Option B code block
-
-
+``` 
+---
 ## 5. Team Members<a class="anchor" id="team-members"></a>
 
 | Name                                                                                        |  Email              
 |---------------------------------------------------------------------------------------------|--------------------             
 | [Lorian Barrett](https://github.com/lorianbarrett)                                          | lorian.barrett@ninetyone.com
+
+
+## 6. Trello board
+Used to manage tasks to get project done.
+https://trello.com/b/HidboQSb/regression-project-board
 
 
 #### Additional Resources to create a README file:
